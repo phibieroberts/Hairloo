@@ -1,0 +1,181 @@
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+
+}
+.close{
+    cursor: pointer;
+}
+.modal{
+    background:#fff;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px;
+    border-bottom:1px solid grey; 
+
+}
+.modal-body{
+    overflow-y: scroll;
+
+}
+.modal img{
+    width: 30%;
+    height: 10%;
+}
+.cart-products{
+    border-bottom: 0 0 5px rgba(0, 0, 0, 0.2); 
+    padding: 10px;
+}
+.cart-item{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+button.delete{
+    background: red;
+    padding: 10px 20px;
+    color:#fff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.increase-decrease{
+    display: flex;
+    justify-content: space-between;
+}
+.increment{
+    background-color:rgb(0, 128, 107);
+    border-radius: 8px;
+    width: 50%;
+    border: none;
+    color:#fff;
+    font-weight:800;
+    margin-bottom: 20px;
+    height: 40px;
+    margin-left: 10px;
+    
+
+}
+.decrement{
+    background: red;
+    border-radius: 8px;
+    width: 50%;
+    border: none;
+    color:#fff;
+    font-weight:800;
+    margin-bottom: 20px;
+
+
+}
+.items{
+    font-weight: 700;
+    color: rgb(163, 163, 163);
+    text-align: center;
+    margin-top: 10px;
+}
+.total{
+    padding:0px 20px;
+    font-size: 14px;
+}
+
+button.purchase{
+    background:rgb(73, 163, 236);
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin: 10px 20px;
+
+}
+button.purchase:hover{
+    transition: all 1s ease-in;
+    background-color:rgb(0, 128, 107);
+}
+@media screen and (max-width: 768px) {
+    .modal{
+        width: 80%;
+        height: 50%;
+    }
+    .modal img{
+        width: 100%;
+        height: 10%;
+    }
+    .modal-header{
+        margin: 0px;
+        font-size: 12px;
+    }
+    .cart-item{
+      padding: 0%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    
+    }
+    .modal h3{
+        font-size: 12px;
+    }
+    .modal p{
+        font-size: 12px;
+
+    }
+    .modal h1{
+        font-size: 16px;
+    }
+    button.delete{
+        padding: 5px 10px;
+    }
+    .increase-decrease{
+        display: flex;
+        justify-content: space-between;
+    }
+    .increment{
+        border-radius: 4px;
+        margin-left: 20px;
+        
+    
+    }
+    .decrement{
+        background: red;
+        border-radius: 4px;
+        width: 50%;
+        border: none;
+    
+    
+    }
+    .cart-products{
+        padding: 20px;
+    }
+
+    .total{
+        padding:0px 20px;
+    }
+    .items{
+        font-weight: 700;
+        color: rgb(163, 163, 163);
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+}

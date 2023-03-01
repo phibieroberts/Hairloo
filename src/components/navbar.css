@@ -1,0 +1,25 @@
+.navbar{
+    padding: 20px 0px;
+    background-color: #fff;
+    margin-bottom: 3rem;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ 
+}
+.nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+   color: rgb(73, 163, 236);
+
+}
+.cart{
+    background:rgb(73, 163, 236);
+padding: 10px;
+color: #fff;
+border-radius: 8px;
+cursor: pointer;
+}
